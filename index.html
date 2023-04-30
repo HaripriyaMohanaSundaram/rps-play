@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta char="UTF-8">
+  <title> Rock Paper Scissors </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="main">
+    <h1 class="main-heading"> Rock Paper Scissors </h1>
+    <div class="lets-play-btn">
+      <button id="letsPlayBtn" class="lets-play-btn"> LET'S ROCK!! </button>
+    </div>
+    <div class="game-main">
+      <div class="play">
+        <div id="selectedChoice" class="selected-choice">
+          <div class="player-choice">
+            <h2> PLAYER </h2>
+            <div class="player-image">
+              <img id="playerImg" src="./images/question-mark.png">
+            </div>
+          </div>
+          <div class="computer-choice">
+            <h2> COMPUTER </h2>
+            <div class="computer-image">
+              <img id="computerImg" src="./images/question-mark.png">
+            </div>
+          </div>
+        </div>
+        <div id="playBtn" class="play-btn">
+          <button id="rockBtn" class="play-rock-btn"> Rock </button>
+          <button id="paperBtn" class="play-paper-btn"> Paper </button>
+          <button id="scisorsBtn" class="play-scissors-btn"> Scissors </button>
+        </div>
+        <div id="roundWinner" class="round-winner">
+          <span id="rndWinner"> </span>
+        </div>
+      </div>
+      <div class="result">
+        <h2> SCOREBOARD </h2>
+        <div class="result-table">
+          <table>
+            <tr>
+              <td> Player </td>
+              <td> Computer </td>
+            </tr>
+            <tr>
+              <td id="playerCount">0</td>
+              <td id="computerCount">0</td>
+            </tr>
+          </table>
+        </div>
+        <div class="final-result">
+          <span id="winner"></span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="newBtn" class="new-btn"> New Game </button>
+    </div>
+  </div>
+  <script src="extenal.js"></script>
+</body>
+
+</html>
